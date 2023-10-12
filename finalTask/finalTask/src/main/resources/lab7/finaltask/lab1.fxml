@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="947.0" prefWidth="564.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab7.finaltask.Controllers.lab1Controller">
+   <children>
+      <ImageView fitHeight="758.0" fitWidth="576.0" layoutX="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@purple.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="758.0" fitWidth="570.0" layoutX="-3.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@purple.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="484.0" fitWidth="283.0" layoutX="141.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@car_up.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="228.0" layoutY="168.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="100.0" stylesheets="@style.css" text="открыть" />
+      <Button layoutX="358.0" layoutY="299.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="100.0" stylesheets="@style.css" text="открыть" />
+      <Button layoutX="97.0" layoutY="299.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="100.0" stylesheets="@style.css" text="открыть" />
+      <Button layoutX="358.0" layoutY="373.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="100.0" stylesheets="@style.css" text="открыть" />
+      <Button layoutX="97.0" layoutY="373.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="100.0" stylesheets="@style.css" text="открыть" />
+      <Button layoutX="228.0" layoutY="526.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="100.0" stylesheets="@style.css" text="открыть" />
+      <VBox fx:id="toggle_menu_VB_doors" alignment="TOP_CENTER" layoutX="-151.0" prefHeight="947.0" prefWidth="208.0" style="-fx-background-color: rgba(0, 0, 0, 0);">
+         <children>
+            <StackPane alignment="TOP_LEFT" prefHeight="86.0" prefWidth="204.0">
+               <children>
+                  <StackPane alignment="TOP_RIGHT" prefHeight="67.0" prefWidth="208.0">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@menu_icon.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="toggleMenu_VB_button" mnemonicParsing="false" onAction="#toggleMenu" prefHeight="55.0" prefWidth="58.0" style="-fx-opacity: 0; -fx-background-color: transparent; -fx-border-width: 0;" text="" />
+                     </children>
+                  </StackPane>
+               </children>
+            </StackPane>
+            <Button fx:id="goto_main_button" mnemonicParsing="false" prefHeight="40.0" prefWidth="108.0" styleClass="transparent-button" stylesheets="@style.css" text="главная">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="108.0" styleClass="transparent-button" stylesheets="@style.css" text="driving">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="109.0" styleClass="transparent-button" stylesheets="@style.css" text="doors">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="108.0" styleClass="transparent-button" stylesheets="@style.css" text="lights">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

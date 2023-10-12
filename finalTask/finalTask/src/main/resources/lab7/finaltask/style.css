@@ -1,0 +1,70 @@
+.progress-bar .bar {
+    -fx-background-insets: 0;
+}
+
+.progress-bar .bar .track {
+    -fx-background-color: red;
+}
+
+.button {
+    -fx-background-color: #555555; /* Темно-серый фон */
+    -fx-text-fill: #ffffff; /* Светлый текст */
+    -fx-border-radius: 5; /* Закругленные края */
+    -fx-padding: 8 16; /* Внутренний отступ кнопки */
+    -fx-background-insets: 0; /* Убираем внутренний градиент */
+    -fx-background-radius: 5; /* Закругление фона */
+    -fx-border-color: transparent; /* Без границы */
+    -fx-border-width: 0; /* Без границы */
+    -fx-background-insets: 0; /* Без внутренних отступов */
+}
+
+.toggle-button .thumb {
+    -fx-background-color: #3498db; /* Цвет рычага */
+    -fx-background-radius: 15; /* Закругленные края рычага */
+    -fx-padding: 5; /* Внутренний отступ рычага */
+}
+
+
+.radio-button {
+    -fx-font-size: 17px; /* Размер шрифта */
+    -fx-text-fill: #333; /* Цвет текста по умолчанию */
+    -fx-background-color: transparent; /* Прозрачный фон */
+    -fx-background-radius: 0; /* Убираем закругление фона */
+    -fx-padding: 0; /* Убираем отступы */
+}
+
+.radio-button:selected {
+    -fx-text-fill: white; /* Изменяем цвет текста, когда RadioButton выбран */
+}
+
+.radio-button:hover {
+    -fx-background-color: transparent; /* Убираем цвет фона при наведении */
+    -fx-text-fill: #fff; /* Изменяем цвет текста при наведении */
+}
+
+.radio-button:selected:hover {
+    -fx-background-color: transparent; /* Убираем цвет фона при нажатии на выбранный RadioButton */
+}
+
+
+.transparent-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: white; /* Изменяем цвет текста на белый */
+    -fx-font-size: 28px; /* Увеличиваем размер шрифта в 2 раза */
+    -fx-cursor: hand;
+    -fx-alignment: center-left; /* Выравнивание текста слева */
+    -fx-padding: 0; /* Убираем внутренний отступ кнопки */
+}
+
+.transparent-button:hover {
+    -fx-text-fill: red;
+}
+
+.transparent-button .label {
+    -fx-text-overrun: clip; /* Убираем сокращения текста */
+}
+
+
+
+
